@@ -1,5 +1,6 @@
 import React from 'react'
 import {useForm} from 'react-hook-form'
+{/* @ts-ignore */}
 import { List } from './List'
 {/* @ts-ignore */}
 import {default as api} from '../store/apiSlice'
