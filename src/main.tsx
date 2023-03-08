@@ -2,19 +2,20 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import { Route, Routes, HashRouter } from "react-router-dom";
-import  GameProvider  from './store/gameContext';
 import Home from './Home'
-import Quiz from './pages/Quiz';
-import Board from './pages/Board'
+                                  {/* @ts-ignore */}
+import {store} from '../src/store/store'
+import { Provider } from 'react-redux'
+
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+    <Provider store={store}>
         <HashRouter>
       <Routes>
-        <Route element={<Home></Home>}>
+        <Route element={<Home></Home>}></Route>
         <Route path='/' element={<App></App>}></Route>
-        </Route>
-
       </Routes>
-    </HashRouter>
+        </HashRouter>
+    </Provider>
     
 )
