@@ -3,6 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "dist/index",
+  "typings": "dist/index",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -10,10 +12,17 @@
   },
   "dependencies": {
     "@fontsource/poppins": "^4.5.10",
+    "@reduxjs/toolkit": "^1.9.3",
+    "boxicons": "^2.1.4",
+    "chart.js": "^4.2.1",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-create-context": "^1.0.2",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.2",
     "react-is": "^18.2.0",
+    "react-redux": "^8.0.5",
     "react-router-dom": "^6.7.0",
     "styled-components": "^5.3.6"
   },
